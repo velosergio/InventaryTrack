@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace InventaryTracker;
 
 use Illuminate\Database\Eloquent\Model;
 

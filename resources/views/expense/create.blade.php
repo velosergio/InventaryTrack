@@ -1,19 +1,21 @@
-@extends('layouts.app')
+@extends('layouts.starter')
 
 @section('content')
-<div class="container">
+<div class="container text-center">
     <div class="row">
         <div class="col">
-            <h1>Crear Gasto</h1>
+            <h1>Crear Elemento | InventaryTracker</h1>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <a class="btn btn-secondary" href="/expense_reports/{{$report->id}}">Regresar</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
+            <!-- Instrucciones -->
+            <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                <strong>Hola!</strong> Ingresa el nombre del elemento y su valor.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
             <!-- Validacion de errores -->
             @if($errors->any())
                 <br/>

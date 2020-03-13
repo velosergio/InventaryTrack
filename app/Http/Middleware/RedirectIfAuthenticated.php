@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace InventaryTracker\Http\Middleware;
 
-use App\Providers\RouteServiceProvider;
+use InventaryTracker\Providers\RouteServiceProvider;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 

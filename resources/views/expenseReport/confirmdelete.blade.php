@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.starter')
 
 @section('content')
 <div class="container">
@@ -9,15 +9,10 @@
     </div>
     <div class="row">
         <div class="col">
-            <a class="btn btn-secondary" href="/expense_reports/">Regresar</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
         <form action="/expense_reports/{{$report->id}}" method="POST">
                 @csrf
                 @method('delete')
-                <button type="submit" class="btn btn-danger">Eliminar</button>
+                <button type="submit" class="btn btn-danger btn-lg">Eliminar</button>
             </form>    
         </div>
     </div>    

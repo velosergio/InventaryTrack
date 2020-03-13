@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace InventaryTracker\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\ExpenseReport;
-use App\Expense;
+use InventaryTracker\ExpenseReport;
+use InventaryTracker\Expense;
 
 class ExpenseController extends Controller
 {
